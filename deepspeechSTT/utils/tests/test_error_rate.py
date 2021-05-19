@@ -1,7 +1,7 @@
 """Test error rate."""
 
 import unittest
-from utils import error_rate
+from deepspeechSTT.utils import error_rate
 
 
 class TestParse(unittest.TestCase):

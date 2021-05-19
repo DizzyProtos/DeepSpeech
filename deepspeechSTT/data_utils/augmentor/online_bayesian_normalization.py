@@ -1,6 +1,6 @@
 """Contain the online bayesian normalization augmentation model."""
 
-from data_utils.augmentor.base import AugmentorBase
+from deepspeechSTT.data_utils.augmentor.base import AugmentorBase
 
 
 class OnlineBayesianNormalizationAugmentor(AugmentorBase):

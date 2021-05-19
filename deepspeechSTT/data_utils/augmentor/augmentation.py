@@ -2,13 +2,13 @@
 
 import json
 import random
-from data_utils.augmentor.volume_perturb import VolumePerturbAugmentor
-from data_utils.augmentor.shift_perturb import ShiftPerturbAugmentor
-from data_utils.augmentor.speed_perturb import SpeedPerturbAugmentor
-from data_utils.augmentor.noise_perturb import NoisePerturbAugmentor
-from data_utils.augmentor.impulse_response import ImpulseResponseAugmentor
-from data_utils.augmentor.resample import ResampleAugmentor
-from data_utils.augmentor.online_bayesian_normalization import \
+from deepspeechSTT.data_utils.augmentor.volume_perturb import VolumePerturbAugmentor
+from deepspeechSTT.data_utils.augmentor.shift_perturb import ShiftPerturbAugmentor
+from deepspeechSTT.data_utils.augmentor.speed_perturb import SpeedPerturbAugmentor
+from deepspeechSTT.data_utils.augmentor.noise_perturb import NoisePerturbAugmentor
+from deepspeechSTT.data_utils.augmentor.impulse_response import ImpulseResponseAugmentor
+from deepspeechSTT.data_utils.augmentor.resample import ResampleAugmentor
+from deepspeechSTT.data_utils.augmentor.online_bayesian_normalization import \
      OnlineBayesianNormalizationAugmentor
 
 

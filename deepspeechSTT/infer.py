@@ -1,9 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
+
+import paddle
 import paddle.fluid as fluid
 
-from data_utils.data import DataGenerator
-from model_utils.model import DeepSpeech2Model
+from deepspeechSTT.data_utils.data import DataGenerator
+from deepspeechSTT.model_utils.model import DeepSpeech2Model
 
 
 class DeepSpeechSTT:
@@ -29,6 +31,8 @@ class DeepSpeechSTT:
         self.alpha = alpha
         self.beta = beta
         self.lang_model_path = lang_model_path
+        
+        paddle.enable_static()
 
         self.data_generator = DataGenerator(
             vocab_filepath=vocab_path,
@@ -137,13 +141,3 @@ class DeepSpeechSTT:
                     'end': self.index_to_sec(phrase[1])
                 })
         return result_transcript_phrases
-
-
-if __name__ == '__main__':
-    stt_model = DeepSpeechSTT(vocab_path='models/baidu_en8k/vocab.txt',
-                              mean_std_path='models/baidu_en8k/mean_std.npz',
-                              model_path='models/baidu_en8k',
-                              spectrogram_type='linear',
-                              lang_model_path='models/lm/common_crawl_00.prune01111.trie.klm')
-    text = stt_model.transcript_file(r'/home/testserver/Downloads/call_sample.wav')
-    print(text)

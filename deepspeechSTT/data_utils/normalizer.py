@@ -2,8 +2,8 @@
 
 import numpy as np
 import random
-from data_utils.utility import read_manifest
-from data_utils.audio import AudioSegment
+from deepspeechSTT.data_utils.utility import read_manifest
+from deepspeechSTT.data_utils.audio import AudioSegment
 
 
 class FeatureNormalizer(object):

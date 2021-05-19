@@ -1,7 +1,7 @@
 """Contains the speech segment class."""
 
 import numpy as np
-from data_utils.audio import AudioSegment
+from deepspeechSTT.data_utils.audio import AudioSegment
 
 
 class SpeechSegment(AudioSegment):

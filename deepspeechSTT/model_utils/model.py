@@ -13,10 +13,10 @@ import numpy as np
 from distutils.dir_util import mkpath
 import paddle.fluid as fluid
 import paddle.fluid.compiler as compiler
-from decoders.swig_wrapper import Scorer
-from decoders.swig_wrapper import ctc_greedy_decoder
-from decoders.swig_wrapper import ctc_beam_search_decoder_batch
-from model_utils.network import deep_speech_v2_network
+from deepspeechSTT.decoders.swig_wrapper import Scorer
+from deepspeechSTT.decoders.swig_wrapper import ctc_greedy_decoder
+from deepspeechSTT.decoders.swig_wrapper import ctc_beam_search_decoder_batch
+from deepspeechSTT.model_utils.network import deep_speech_v2_network
 
 logging.basicConfig(
     format='[%(levelname)s %(asctime)s %(filename)s:%(lineno)d] %(message)s')

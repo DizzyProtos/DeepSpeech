@@ -1,6 +1,6 @@
 """Contain the speech perturbation augmentation model."""
 
-from data_utils.augmentor.base import AugmentorBase
+from deepspeechSTT.data_utils.augmentor.base import AugmentorBase
 
 
 class SpeedPerturbAugmentor(AugmentorBase):

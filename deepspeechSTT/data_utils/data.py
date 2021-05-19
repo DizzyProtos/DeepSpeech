@@ -8,11 +8,11 @@ import multiprocessing
 import numpy as np
 import paddle.fluid as fluid
 from threading import local
-from data_utils.utility import read_manifest
-from data_utils.augmentor.augmentation import AugmentationPipeline
-from data_utils.featurizer.speech_featurizer import SpeechFeaturizer
-from data_utils.speech import SpeechSegment
-from data_utils.normalizer import FeatureNormalizer
+from deepspeechSTT.data_utils.utility import read_manifest
+from deepspeechSTT.data_utils.augmentor.augmentation import AugmentationPipeline
+from deepspeechSTT.data_utils.featurizer.speech_featurizer import SpeechFeaturizer
+from deepspeechSTT.data_utils.speech import SpeechSegment
+from deepspeechSTT.data_utils.normalizer import FeatureNormalizer
 
 
 class DataGenerator(object):

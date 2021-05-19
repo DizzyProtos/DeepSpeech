@@ -1,8 +1,8 @@
 """Contains the noise perturb augmentation model."""
 
-from data_utils.augmentor.base import AugmentorBase
-from data_utils.utility import read_manifest
-from data_utils.audio import AudioSegment
+from deepspeechSTT.data_utils.augmentor.base import AugmentorBase
+from deepspeechSTT.data_utils.utility import read_manifest
+from deepspeechSTT.data_utils.audio import AudioSegment
 
 
 class NoisePerturbAugmentor(AugmentorBase):

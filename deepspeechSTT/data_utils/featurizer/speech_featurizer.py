@@ -1,7 +1,7 @@
 """Contains the speech featurizer class."""
 
-from data_utils.featurizer.audio_featurizer import AudioFeaturizer
-from data_utils.featurizer.text_featurizer import TextFeaturizer
+from deepspeechSTT.data_utils.featurizer.audio_featurizer import AudioFeaturizer
+from deepspeechSTT.data_utils.featurizer.text_featurizer import TextFeaturizer
 
 
 class SpeechFeaturizer(object):
